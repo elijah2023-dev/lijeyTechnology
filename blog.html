@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG LIJEY TECHNOLOGY</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sub-header{
+            height: 50vh;
+            width: 100%;
+           background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(graph.jpeg);
+
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            color: white;
+      
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img{
+            width: 250px;
+
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+            margin-top: 0px;
+
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+          }
+        .sub-header h1{
+            margin-top:0px;
+        }
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top:10px ;
+    padding-bottom: 0px;
+
+}
+.about-col{
+    flex-basis: 31%;
+    padding: 30px 2px;
+
+
+
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:left;
+    background: #fff3f3;
+
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .hero-btn:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+        .red-btn{
+            border: 1px solid #f44336;
+            background: transparent;
+            color: #f44336;
+
+        }
+        .red-btn:hover{
+            color: white;
+
+        }
+
+ 
+        nav .fa{
+            display: none;
+        }
+        
+        @media(max-width: 700px){
+            
+            nav img{
+            width: 100px;
+        }
+            
+            .nav-links{
+                position: absolute;
+                background: #f44336;
+                height: 50vh;
+                width: 90px;
+                top: 0;
+                right:0px;
+                text-align: left;
+                z-index: 2;
+                transition: 1s;
+
+            }
+            nav .fa{
+                display: block;
+                color: #fff;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .nav-links ul{
+                padding: 0px;
+            }
+        }
+
+
+
+
+
+
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*----------------------------------------call to action---------------------------*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(mnj.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;}
+    .cta p{
+        color: white;
+    }
+
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*----------------------------------------blog---------------------------*/
+
+.blog-content{
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+.row{
+     margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+   
+   }
+
+
+.blog-left{
+    flex-basis: 45%;
+
+}
+.blog-left img{
+    width: 40%;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blog-left p{
+    color: black;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+}
+.hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: blue;
+            border: 1px solid black;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .hero-btn:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+        .red-btn{
+            border: 1px solid #f44336;
+            background: transparent;
+            color: #f44336;
+
+        }
+        .red-btn:hover{
+            color: white;
+
+        }
+        .comment-box{
+            border: 1px solid #ccc;
+            margin: 50px 0;
+            padding: 10px 20px;
+        }
+        .comment-box h3{
+            text-align: left;
+        }
+        .comment-form input, .comment-form textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            background: #f0f0f0;
+        }
+        .comment-form button{
+            margin: 10px 0;
+
+        }
+
+.blog-right{
+    width: 45%;
+}
+.blog-right img{
+    width: 60%;
+}
+.blog-right h2{
+    color: black;
+    font-weight: 600;
+    margin:30px 0 ;
+}
+.blog-right p{
+    color: black;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+}
+        @media(max-width:700px){
+            .sub-header h1{
+                font-size: 24px;
+            }
+        }
+
+
+
+
+
+
+
+/*----------------------------------------footer---------------------------*/
+
+.footer{
+    margin:100px auto ;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(k.jpg);
+    background-position: center;
+    background-size:300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.footer h4{
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.footer p{
+    color: white;
+}
+.fa-heart-o{
+    color: darkred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <section class="sub-header">
+        <nav>
+            <img src="F:\desktop\lijey company technology\logo lijey 2.jpg"</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+              
+                 <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html#">BLOG</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showmenu()"></i>
+        </nav>
+        <h1> BLOGS</h1>
+                
+    </section>
+
+<!----------------------------------------------BLOG PAGE CONTENT------------------------>
+
+
+<section class="blog-content">
+<div class="row">
+    <div class="blog-left">
+        <img src="F:\desktop\lijey company technology\qwe.jpeg"</a>
+        <h2>The Benefits of Hiring Remote IT Professionals for Your Business</h2>
+        <p>In today's digital-first landscape, businesses are increasingly turning to remote IT professionals to meet their technological needs. The shift towards remote work has not only proven feasible but also advantageous, particularly for IT roles. Here are the key benefits of hiring remote IT professionals for your business:<br>
+<em>Access to a Global Talent Pool</em><br>Hiring remotely eliminates geographical barriers, allowing businesses to tap into a vast global talent pool. This means you can find highly skilled IT professionals with specialized expertise that may not be available locally. It also fosters diversity, bringing in fresh perspectives and innovative ideas.<br>
+<em>Cost Efficiency</em><br>
+Remote IT professionals can significantly reduce operational costs. Businesses save on expenses related to office space, utilities, and equipment. Additionally, companies can benefit from varied salary expectations depending on the cost of living in different regions, making it more cost-effective without compromising on talent quality.<br>
+<em>Increased Productivity</em><br>Contrary to common misconceptions, remote work often leads to higher productivity. Remote IT professionals tend to have fewer workplace distractions, flexible work environments, and the ability to structure their workday for maximum efficiency. This autonomy fosters motivation and better performance.<br>
+<em>Flexibility and Scalability</em><br>
+
+Remote teams offer unparalleled flexibility. Businesses can scale their IT workforce up or down based on project demands without the logistical challenges of physical office setups. This adaptability is especially beneficial for startups and businesses experiencing rapid growth.<br>
+<em>Business Continuity and Resilience</em><br>
+Having remote IT professionals enhances business continuity. In times of crisis, such as natural disasters or pandemics, remote teams can continue operations without significant disruptions. This resilience ensures that critical IT functions remain active, safeguarding business operations.<br>
+<em>24/7 Support Capabilities</em><br>
+With remote IT professionals spread across different time zones, businesses can offer round-the-clock support. This is particularly advantageous for global companies that require IT services and monitoring at all hours to ensure seamless operations.<br>
+<em> Improved Employee Satisfaction and Retention</em><br>
+
+Remote work arrangements often lead to higher job satisfaction due to better work-life balance. Satisfied employees are more likely to stay with the company longer, reducing turnover rates and the associated costs of recruitment and training.<br>
+<em>Conclusion</em><br>
+
+The benefits of hiring remote IT professionals extend beyond cost savings. They encompass enhanced productivity, flexibility, and access to a global talent pool, all contributing to a more resilient and competitive business. As the future of work continues to evolve, embracing remote IT talent can be a strategic advantage for businesses aiming for growth and innovation.
+
+
+<div class="comment-box">
+    <h3> leave a comment</h3>
+    <form class="comment-form">
+        <form action="form-hndler.php" method="POST">
+        <input type="text"  name="name" placeholder="Enter name">
+         <input type="email" name="email"  placeholder="enter email">
+         <textarea rows="8" name="message" placeholder="message"></textarea>
+         <button type="submit" class="hero-btn"> post comment</button>
+
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        </p>
+    </div>
+
+ <div class="blog-right">
+ <img src="F:\desktop\lijey company technology\cons.jpeg"</a>
+ <h3>Why Passion and Consistency Are Key to Success in Remote IT Jobs</h3>
+ <p>In today’s digital age, remote work has become increasingly popular, especially within the IT sector. The allure of flexible schedules, no commuting, and the ability to work from anywhere in the world has made remote IT jobs a highly sought-after option. However, while the perks of remote work are undeniable, succeeding in a remote IT job requires more than just technical expertise. Two crucial elements—passion and consistency—play an essential role in achieving long-term success</p><br>
+ <p><em>The Role of Passion in Remote IT Jobs</em><br>
+    Passion is the driving force that fuels growth and motivates professionals to go beyond the minimum. When you're passionate about your work, you're more likely to dive deeper into problem-solving, explore new technologies, and stay committed to your professional development. Passion for IT, in particular, can be seen in various forms:<br>
+
+<em>Eagerness to Learn: </em>The IT field is constantly evolving, with new programming languages, tools, and frameworks emerging regularly. Passionate professionals are more likely to invest time in learning and staying up-to-date with industry trends, ensuring they remain competitive and relevant.<br>
+
+<em>Problem-Solving Drive: </em>IT roles often require professionals to troubleshoot complex issues and create innovative solutions. Passion for the craft can spark creativity and persistence, leading to higher-quality solutions and greater job satisfaction<br>
+<em>Dedication to Quality:</em> Passionate workers care deeply about the quality of their work. For remote IT workers, this often translates into meticulous attention to detail and a commitment to delivering the best possible outcomes, even when working independently or without immediate supervision.<br></p>
+<p><em>The Importance of Consistency</em><br>Consistency is what separates high achievers from those who struggle in their careers. In the realm of remote IT jobs, where autonomy is a key feature, consistency becomes even more critical. Here’s why:<br>
+
+<em>Maintaining Productivity:</em> Without the traditional structure of an office environment, remote workers are responsible for setting their own schedules. Consistency in working hours and work habits ensures that you're not only meeting deadlines but also continuously making progress on projects. A consistent work routine also minimizes procrastination and keeps distractions at bay.<br>
+
+<em>Building Trust:</em> In a remote setup, where communication often happens via digital tools, consistency in output and communication fosters trust with colleagues, managers, and clients. Being reliable and predictable in your work habits assures others that you're committed to the team's goals and that they can count on you.<br>
+
+<em>Achieving Long-Term Goals: </em>IT professionals who succeed in remote roles typically set long-term goals, such as mastering a new programming language or achieving specific career milestones. Consistency in taking small, manageable steps every day contributes significantly to achieving these goals. Whether it’s dedicating time to professional development or adhering to work deadlines, consistent effort leads to tangible growth over time.</p><br>
+<p><em>Balancing Passion and Consistency</em><br>While passion provides the drive to push through challenges and explore new horizons, consistency keeps you on track. Both qualities work together harmoniously to fuel success. Passion without consistency can lead to burnout, as constantly chasing new ideas without following through may leave projects unfinished. On the other hand, consistency without passion can make work feel like a monotonous task, leading to disengagement and lackluster results.<br>
+
+<em>To strike the right balance:</em>
+
+Set Realistic Goals: Passion fuels ambition, but it’s essential to set achievable short-term and long-term goals that align with your interests. Breaking larger tasks into smaller, manageable steps can make the work feel more rewarding and less overwhelming.<br>
+
+<em>Create a Routine: </em>Consistency thrives in an environment with structured routines. Having a daily or weekly schedule can help you stay focused while still leaving space for moments of creativity and passion.<br>
+
+<em>Take Breaks:</em> Passion can sometimes lead to overwork, so it’s essential to take regular breaks to avoid burnout. Consistency in taking care of your mental and physical well-being is crucial for long-term success.
+
+</p><br>
+<p><em>Conclusion</em><br>Succeeding in remote IT jobs requires more than just technical skills. Passion for the work and consistency in your efforts are the pillars that support a thriving remote career. Passion will keep you engaged and motivated to constantly improve, while consistency ensures that you stay productive and reliable, building trust with your team. Together, they create a powerful synergy that drives success in the dynamic and ever-evolving world of remote IT jobs.<br>
+
+By fostering both passion and consistency, remote IT professionals can navigate challenges, continue growing in their careers, and ultimately achieve their professional goals</p>
+
+
+
+
+    
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------call to action------------------------>
+<section class="cta">
+    <h1>Let’s Build Your Success Together</h1>
+    <p>
+Let’s Build Your Success Together
+At lijey Technology, we’re passionate about helping businesses and individuals thrive in the digital world. Whether you need IT solutions, online job support, or market research services, we’re here to deliver results that matter.</p>
+<h1>Ready to take the next step?</h1>
+<p>Get in touch with us today and let’s discuss how we can turn your ideas into reality.</p>
+    <a href="contact 2.html" class="hero-btn">CONTACT US</a>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------footer------------------------>
+
+
+
+<section class="footer">
+    <h4> About us</h4>
+    <p>Dream and achieve: your path to succes<br>
+     This is a place of ultimate destination and inovation.<br>
+. Exprore,Engage, and Elavate Your Embark on a journey of Discovery.<br>
+. Join us on This Exiting Adventure, Where Imagination has No limits and possibilities are endless.<br>
+. Welcome to a world of Infinite Opportinities.<br>
+. It'S been scientifically proven on this website</p>
+    
+    <P>Made with<i class="fa fa-heart-o"> by lijey Technology</i></P>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------javascript for teggle menu----------------------------->
+
+
+
+<script>
+    var navlinks= document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right="0"
+    }
+     function hidemenu(){
+        navlinks.style.right="-85px"
+    }
+
+</script>
+    
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

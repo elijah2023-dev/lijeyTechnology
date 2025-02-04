@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES LIJEY TECHNOLOGY</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sub-header{
+            height: 50vh;
+            width: 100%;
+           background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(7.jpeg);
+
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            color: white;
+      
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img{
+            width: 250px;
+
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+            margin-top: 0px;
+
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+          }
+        .sub-header h1{
+            margin-top:0px;
+        }
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top:10px ;
+    padding-bottom: 0px;
+
+}
+.about-col{
+    flex-basis: 31%;
+    padding: 30px 2px;
+
+
+
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:left;
+    background: #fff3f3;
+
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .hero-btn:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;
+        }
+        .red-btn{
+            border: 1px solid #f44336;
+            background: transparent;
+            color: #f44336;
+
+        }
+        .red-btn:hover{
+            color: white;
+
+        }
+
+ 
+        nav .fa{
+            display: none;
+        }
+        @media(max-width: 700px){
+            
+            nav img{
+            width: 100px;
+        }
+            
+            .nav-links{
+                position: absolute;
+                background: #f44336;
+                height: 50vh;
+                width: 90px;
+                top: 0;
+                right:0px;
+                text-align: left;
+                z-index: 2;
+                transition: 1s;
+
+            }
+            nav .fa{
+                display: block;
+                color: #fff;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .nav-links ul{
+                padding: 0px;
+            }
+        }
+
+
+
+
+/*--------------about us------------*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align:left;
+    padding-top:-10px;
+    padding-bottom: 0px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+}
+p{
+    color: black;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*----------------------------------------call to action---------------------------*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(c.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;}
+    .cta p{
+        color: white;
+    }
+
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------footer---------------------------*/
+
+.footer{
+    margin:100px auto ;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(k.jpg);
+    background-position: center;
+    background-size:300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.footer h4{
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.footer p{
+    color: white;
+}
+.fa-heart-o{
+    color: darkred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <section class="sub-header">
+        <nav>
+            <img src="F:\desktop\lijey company technology\logo lijey 2.jpg"</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    
+                 <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html#">BLOG</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact 2.html">CONTACT</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showmenu()"></i>
+        </nav>
+        <h1> SERVICES</h1>
+                
+    </section>
+
+
+ <!----------------------------------------------SERVICES------------------------>
+
+<section class="course">
+    <h1>SERVICES </h1>
+    <p>We offer a wide range of IT and creative services to help businesses, brands, and individuals achieve their goals. Whether you need engaging content, stunning designs, expert data analysis, or a professional website, I’m here to deliver high-quality solutions tailored to your needs.
+</p>
+<div class="row">
+    <div class="course-col">
+        <h3>COPY WRITING</h3>
+        <p>Words have the power to influence and sell. I craft compelling copy that drives action and helps businesses connect with their audience.</p>
+        <h3>My Copywriting Services Include:</h3>
+        <p>✅ Sales Copy – Website landing pages, product descriptions, and marketing materials.<br>
+✅ Brand Storytelling – Developing a unique voice and narrative for your business.<br>
+✅ Advertising Copy – High-impact ad copy for digital and print campaigns.<br>
+
+✅ Press Releases – Professionally written announcements to gain media attention.</p>
+    </div>
+    <div class="course-col">
+        <h3> ARTICAL AND ONLINE WRITING</h3>
+        <p>Great content is the foundation of any successful online presence. I create well-researched, engaging, and SEO-optimized content that informs, persuades, and converts.</p>
+        <h3>My Writing Services Include:</h3>
+        <p>✅ Blog Writing – Engaging and informative blog posts that attract and retain readers.<br>
+
+✅ SEO-Optimized Articles – Keyword-rich content that boosts search engine rankings.<br>
+
+✅ Website Content – Professionally written pages for businesses, brands, and personal sites.<br>
+
+✅ Ebooks & White Papers – In-depth content that positions you as an industry expert.<br>
+
+✅ Social Media Content – Attention-grabbing posts designed for engagement.<br>
+
+✅ Email Marketing – Persuasive email copy that converts leads into customers.</p>
+    </div>
+     <div class="course-col">
+        <h3>    GRAPHIC  DESIGN</h3>
+        <p>A strong visual identity is key to making a lasting impression. I create eye-catching designs that align with your brand and message.</p>
+        <h3>My Graphic Design Services Include:</h3>
+        <p>✅ Logo Design – Unique, memorable, and brand-aligned logos.<br>
+
+✅ Marketing Materials – Brochures, flyers, posters, and business cards.<br>
+
+✅ Social Media Graphics – Custom visuals for platforms like Instagram, Facebook, and LinkedIn.<br>
+
+✅ Branding & Identity – Color schemes, typography, and design guidelines for a cohesive look.<br>
+
+✅ UI/UX Design – User-friendly website and app interfaces for a seamless experience.</p>
+    </div>
+    
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!----------------------------------------------ABOUT US------------------------>
+
+<section class="about-us">
+    <div class="row">
+       <div class="about-col">
+           <h1> DATA ANALYSIS</h1>
+           <p>Unlock the power of data to make smarter business decisions. I provide in-depth data analysis to help you understand trends, patterns, and opportunities.<p>
+            <h3>My Data Analysis Services Include:</h3>
+            <p>✅ Data Cleaning & Processing – Organizing raw data for accuracy.<br>
+
+✅ Data Visualization – Creating graphs, charts, and dashboards for clear insights.<br>
+
+✅ Statistical Analysis – Identifying trends, patterns, and business opportunities.<br>
+
+✅ Business Intelligence Solutions – Helping organizations make data-driven decisions.</p>
+
+    <a href="contact 2.html" class="hero-btn red-btn">lets talk about your project</a>
+       </div> 
+
+        <div class="about-col">
+           <h1>Web Design & Development</h1>
+           <p>Your website is the digital face of your business. I design and develop responsive, user-friendly websites that leave a lasting impression.My Web Services Include:</p><br>
+           <p> ✅ Custom Website Design – Visually appealing and functional websites.<br>
+✅ Mobile-Friendly & Responsive Designs – Optimized for all devices.<br>
+✅ E-commerce Solutions – Online stores with secure payment integrations.<br>
+✅ Website Maintenance & Updates – Ensuring your site stays secure and up to date.</p>
+       </div>
+
+        <div class="about-col">
+            <h1>Online Survey & Market Research Services</h1>
+            <i><img src="F:\desktop\lijey company technology\CSE.jpg"></i>
+           <p>
+At lijey Teechnology, we help businesses unlock the power of data through comprehensive online surveys and market research. In today’s competitive world, making informed decisions is the key to success—and that’s where we come in.</p>
+
+
+       </div> 
+    </div>
+    </section>
+
+
+
+
+    <!------------------------------------------------about us 2---------------------------------------------------------------------->
+
+
+
+
+
+<section class="course">
+    <h1> </h1>
+    <p>
+</p>
+<div class="row">
+    <div class="course-col">
+        <h3>Why Market Research Matters</h3>
+        <p>Understanding your target audience, industry trends, and competitors can make all the difference in shaping successful strategies. Our market research services provide actionable insights that help businesses:<br></p>
+        <ul>
+<li>Identify new opportunities</li>
+<li>Understand customer behavior and preferences</li>
+<li>Analyze competitors and industry trends</li>
+<li>Make data-driven decisions for growth</li>
+ <i><img src="F:\desktop\sublime text\download (1).jpeg"></i>
+</ul>
+    </div>
+    <div class="course-col">
+        <h3>Our Online Survey Services</h3>
+    <p>
+We design and conduct custom online surveys to collect accurate, relevant data that aligns with your business goals. Our services include:
+
+<em>Customer Satisfaction Surveys:</em> <br>Understand what your customers value most and where you can improve.
+<em>Employee Feedback Surveys:</em><br> Gain insights into employee engagement, productivity, and workplace satisfaction.
+<em>Product & Service Feedback:</em><br> Collect user opinions to refine your offerings and boost customer loyalty.
+<em>Market Research Surveys: </em><br>Gather data on target demographics, purchasing habits, and market demands.
+<i><img src="F:\desktop\lijey company technology\download (1).jpeg"></i>
+</p>
+
+    </div>
+     <div class="course-col">
+        <h3>Our Approach</h3>
+        <p> 
+<em>Consultation:</em><br> We understand your goals and design a research strategy that fits your needs.
+<em>Data Collection</em>:<br> Using advanced survey tools and research methods, we gather reliable data from the right sources.<br>
+<em>Analysis & Insights:</em><br> Our team analyzes the data to uncover trends, patterns, and opportunities.
+<em>Actionable Reports: </em><br>We deliver detailed reports with clear recommendations to guide your business decisions.
+ <i><img src="F:\desktop\lijey company technology\market.jpeg"></i>
+</p>
+    </div>
+    
+</div>
+</section>
+
+
+
+
+
+
+<!----------------------------------------------call to action------------------------>
+<section class="cta">
+    <h1>Let’s Build Your Success Together</h1>
+    <p>
+Let’s Build Your Success Together
+At lijey Technology, we’re passionate about helping businesses and individuals thrive in the digital world. Whether you need IT solutions, online job support, or market research services, we’re here to deliver results that matter.</p>
+<h1>Ready to take the next step?</h1>
+<p>Get in touch with us today and let’s discuss how we can turn your ideas into reality.</p>
+    <a href="contact 2.html" class="hero-btn">CONTACT US</a>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------footer------------------------>
+
+
+
+<section class="footer">
+    <h4> About us</h4>
+    <p>Dream and achieve: your path to succes<br>
+     This is a place of ultimate destination and inovation.<br>
+. Exprore,Engage, and Elavate Your Embark on a journey of Discovery.<br>
+. Join us on This Exiting Adventure, Where Imagination has No limits and possibilities are endless.<br>
+. Welcome to a world of Infinite Opportinities.<br>
+. It'S been scientifically proven on this website</p>
+    
+    <P>Made with<i class="fa fa-heart-o"> by lijey Technology</i></P>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------javascript for teggle menu----------------------------->
+
+
+
+<script>
+    var navlinks= document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right="0"
+    }
+     function hidemenu(){
+        navlinks.style.right="-85px"
+    }
+
+</script>
+    
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
